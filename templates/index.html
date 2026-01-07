@@ -1,14 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anthracite Journal</title>
-    <link rel="stylesheet" href="../static/styles.css">
-</head>
-<body>
-    <h1>Welcome to the Anthracite Journal</h1>
-    <a href="{{ url_for('upload_file') }}">Upload File</a><br>
-    <a href="{{ url_for('display_files') }}">View Uploaded Files</a>
-</body>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Anthracite Journal</title>
+        <link rel="stylesheet" href="../static/styles.css">
+
+        <style>
+            * {
+            box-sizing: border-box;
+            }
+
+            body {
+            font-family: Arial, Helvetica, sans-serif;
+            }
+
+            /* Style the header */
+            header {
+            background-color: #666;
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+            color: white;
+            }
+
+            /* Create two columns/boxes that floats next to each other */
+            nav {
+            float: left;
+            width: 30%;
+            height: 300px; /* only for demonstration, should be removed */
+            background: #ccc;
+            padding: 20px;
+            }
+
+            /* Style the list inside the menu */
+            nav ul {
+            list-style-type: none;
+            padding: 0;
+            }
+
+            article {
+            float: left;
+            padding: 20px;
+            width: 70%;
+            background-color: #f1f1f1;
+            height: 300px; /* only for demonstration, should be removed */
+            }
+
+            /* Clear floats after the columns */
+            section::after {
+            content: "";
+            display: table;
+            clear: both;
+            }
+
+            /* Style the footer */
+            footer {
+            background-color: #777;
+            padding: 10px;
+            text-align: center;
+            color: white;
+            }
+
+            /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+            @media (max-width: 600px) {
+            nav, article {
+                width: 100%;
+                height: auto;
+            }
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <header>
+            <h1 style="">Welcome to the Anthracite Journal</h1>
+        </header>
+
+        <section>
+
+            <nav>
+                <a href="{{ url_for('upload_file') }}">Upload File</a><br>
+                <a href="{{ url_for('display_files') }}">View Uploaded Files</a>
+            </nav>
+
+            <article>
+                <h2> About Anthracite</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Praesent arcu molestie semper netus bibendum cursus non. Euismod libero hac rhoncus habitant magna lacus semper senectus ac dui fames.
+                </p>
+                <p>
+                    Rhoncus eu euismod curae consequat enim leo est ante cras justo luctus euismod ex malesuada. Ultricies dictum mauris varius auctor vitae at erat rhoncus. Morbi nullam massa sapien rutrum lectus nunc interdum sodales tempor tincidunt quisque ultrices sollicitudin. Duis sit vehicula nec sed placerat placerat purus urna.
+                </p>
+            </article>
+
+        </section>
+
+    </body>
+
 </html>
