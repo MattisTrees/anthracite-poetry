@@ -7,7 +7,9 @@
     <link rel="stylesheet" href="../static/styles.css">
 </head>
 <body>
-    <h1>Uploaded Files</h1>
+    <header>
+        <h1>Uploaded Files</h1>
+    </header>
     <ul>
         {% for file in files %}
             <li><a href="{{ url_for('uploaded_file', filename=file) }}">{{ file }}</a></li>
