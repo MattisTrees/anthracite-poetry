@@ -10,11 +10,21 @@
     <header>
         <h1>Upload a File</h1>
     </header>
+
+    <nav class="navbar">
+        <ul class="navlist">
+            <li><a href="{{ url_for('home') }}">Home</a></li>
+            <li><a href="{{ url_for('display_files') }}">Library</a></li>
+            <li><a>Authors</a></li>
+            <li><a>About</a></li>
+            <li><a href="{{ url_for('upload_file') }}">Submit</a></li><br>
+            <li><a>Contact</a></li>
+        </ul>
+    </nav>
     
     <form method="POST" enctype="multipart/form-data">
         <input type="file" name="file">
         <button type="submit">Upload</button>
     </form>
-    <a href="{{ url_for('home') }}">Go Back to Home</a>
 </body>
 </html>
