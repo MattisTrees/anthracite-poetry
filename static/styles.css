@@ -5,8 +5,8 @@ box-sizing: border-box;
 body {
 font-family: Arial, Helvetica, sans-serif;
 background-color: #F3DFC1;
-color: rgb(0, 0, 0);
-border: 10px, solid, #1A1C1A
+color: #1A1C1A;
+border: 20px, solid, #1A1C1A;
 }
 
 /* Style the header */
