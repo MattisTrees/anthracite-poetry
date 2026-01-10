@@ -4,9 +4,9 @@ box-sizing: border-box;
 
 body {
 font-family: Arial, Helvetica, sans-serif;
+border: 20px, solid, #1A1C1A;
 background-color: #F3DFC1;
 color: #1A1C1A;
-border: 20px, solid, #1A1C1A;
 }
 
 /* Style the header */
