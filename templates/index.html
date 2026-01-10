@@ -13,10 +13,36 @@
     </head>
 
     <body>
-        <nav id="navbar">
-            <a href="{{ url_for('upload_file') }}">Upload File</a><br>
-            <a href="{{ url_for('display_files') }}">View Uploaded Files</a>
+
+        <nav class="navbar">
+            <ul class="navlist">
+                <li><a href="{{ url_for('home') }}">Home</a></li>
+                <li><a href="{{ url_for('display_files') }}">Library</a></li>
+                <li><a>Authors</a></li>
+                <li><a>About</a></li>
+                <li><a href="{{ url_for('upload_file') }}">Submit</a></li><br>
+                <li><a>Contact</a></li>
+            </ul>
         </nav>
+
+        <div style="width: 50%; align-content: center; margin:auto; font-size: 36px;">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Bibendum torquent aliquam litora vel semper orci sodales maximus donec nisl nec placerat. Nec senectus cursus elementum nam ex ac fermentum iaculis rutrum aptent eleifend mi tristique consectetur nostra.
+                Non aptent facilisis odio neque condimentum maecenas nisi malesuada vitae. Lectus cras dolor porttitor turpis feugiat urna morbi commodo sociosqu quis turpis senectus diam arcu.
+                A cras curabitur dolor velit eu lobortis arcu habitant faucibus nunc leo viverra conubia nisi habitant. 
+
+            </p>
+            <p>
+                Imperdiet condimentum tortor consectetur mattis lacinia eros habitasse leo. Rutrum viverra inceptos morbi vivamus porttitor fringilla aenean scelerisque. Facilisis hendrerit lacinia nam hendrerit leo habitasse. Velit hendrerit mattis mollis elit iaculis velit class mauris hendrerit potenti condimentum turpis sapien finibus accumsan.
+                Vel sociosqu bibendum aenean a eget pulvinar a lobortis.
+            </p>
+            
+            <p> 
+                In quam suspendisse curabitur sem nulla faucibus. Euismod lorem tortor leo purus vehicula per malesuada sodales feugiat ex augue luctus nisl odio. Imperdiet nullam mollis quisque sit venenatis tempor turpis nunc velit ad class.
+                Ornare in pharetra mattis himenaeos tempor habitant. Pharetra maecenas id morbi laoreet condimentum. Maximus cubilia laoreet erat conubia aliquam risus pretium. Senectus quam quis hac ut porta nulla duis libero urna.
+                Dapibus justo ullamcorper nisi cursus aptent senectus erat leo. Hac amet elementum vivamus vehicula sollicitudin aliquam at vulputate cursus vitae quam phasellus nisi. In finibus ac semper faucibus cubilia posuere duis cras odio faucibus finibus amet id. Neque tempus torquent cursus fringilla felis tristique condimentum.
+            </p>
+        </div>
 
     </body>
 
