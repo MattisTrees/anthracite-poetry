@@ -4,6 +4,36 @@
     margin: 0%;
 }
 
+.logo {
+    font-size: 50px;
+}
+
+.logo:hover {
+    color: #762222;
+}
+
+.row {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.column{
+    float: left;
+    width: 30%;
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+    border: 2px solid #1A0000;
+    margin-left: 0.5%;
+    margin-right: 0.5%;
+}
+
 .navbar {
     top: 0px;
     /* margin: 3%; */
