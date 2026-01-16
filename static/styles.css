@@ -104,3 +104,17 @@ ul li a {
     color: #762222;
     /* Change the color on hover */
 }
+
+.subscribe {
+    width: 86.5%;
+    margin: auto;
+    margin-top: 20px;
+    border: 2px solid #722;
+    height: 200px;
+    padding: 20px;
+    color: #722;
+}
+
+.footer {
+
+}
