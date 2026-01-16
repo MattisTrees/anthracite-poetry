@@ -4,6 +4,11 @@
     margin: 0%;
 }
 
+body {
+    margin-left: max(8%, 10px);
+    margin-right: max(8%, 10px);
+}
+
 .logo {
     font-size: 50px;
 }
@@ -28,7 +33,7 @@
     float: left;
     width: 30%;
     padding: 10px;
-    height: 300px; /* Should be removed. Only for demonstration */
+    height: 500px; /* Should be removed. Only for demonstration */
     border: 2px solid #1A0000;
     margin-left: 0.5%;
     margin-right: 0.5%;
